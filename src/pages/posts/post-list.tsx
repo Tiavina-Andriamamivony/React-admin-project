@@ -1,4 +1,4 @@
-import { Datagrid, List, ReferenceField, TextField } from 'react-admin';
+import { Datagrid, List, ReferenceField, TextField , SimpleList} from 'react-admin';
 
 export const PostList = () => (
     <List>
@@ -9,5 +9,7 @@ export const PostList = () => (
             <TextField source="body" />
             <ReferenceField source="userId" reference="users" />
         </Datagrid>
+
+        {/* <SimpleList primaryText ={(record)=>record.title}/> */}
     </List>
 );
