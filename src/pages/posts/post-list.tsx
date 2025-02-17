@@ -5,7 +5,7 @@ export const PostList = () => (
         <Datagrid>
 
             <TextField source="id" />
-            <TextField source="title" />
+            <TextField source="title" label="zavatra" />
             <TextField source="body" />
             <ReferenceField source="userId" reference="users" />
         </Datagrid>
